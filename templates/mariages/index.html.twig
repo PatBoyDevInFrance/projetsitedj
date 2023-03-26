@@ -1,0 +1,75 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mariages{% endblock %}
+
+{% block body %}
+
+
+<body class="color-mariage">
+    
+ 
+
+<div class="container ">
+<div class="container3 glass p-5">
+<div class="row">
+<h1 class="mt-5  " style="color:grey"> Mariages  &</h1>
+<br> <br>
+<h2 class="mt-2">Anniversaires, soirées de comitées, camping etc..</h2>
+
+<p style="color: grey; font-size: 1.2em;"   classe=" ml-5 ">
+Je vous propose, une animation soignée et adaptée à tout type d'événement.  <br>
+                     Mariage, anniversaire, séminaire, camping.. <br>
+                     Tout se prépare à l'avance. <br>
+L'ambiance musicale est l'élément majeur pour la réussite d'un événement, <br> 
+C'est pour cela que je vous propose d'étudier ensemble la playlist. <br>
+Également, pendant la journée (si option) de la planification des évènements, jeux, intervention micro, visionnage etc.. <br>
+ <br>
+Ce jour est un moment unique et magique ! <br>
+Vous avez juste à profiter de vos invitées. <br> 
+</div>
+                       
+
+{# <div class="mx-auto"> #}
+
+            <video autoplay controls width="340">
+                <source src="{{ asset('assets/imag/v1.mp4') }}" type="video/mp4">
+                </video>
+                <video  controls width="340">
+                <source src="{{ asset('assets/imag/v5.mp4') }}" type="video/mp4">
+                </video>
+                <video  controls width="340">
+                <source src="{{ asset('assets/imag/v7a.mp4') }}" type="video/mp4">
+                </video>
+
+        
+</div>
+</div>    
+<br>
+<br>
+
+<br>
+<div class="container2 mb-3 mx-auto ">
+
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2" >
+    <input type="radio" name="slider" id="item-3" >
+    <div class="cards2">
+    <label for="item-1" class="card2" id="song-1">
+    <img src="{{asset('assets/imag/Mariage1.png')}}" alt="song" >
+    </label>
+    <label for="item-2" class="card2" id="song-2">
+    <img src="{{asset('assets/imag/Mariage2.png')}}" alt="song" >
+    </label>
+    <label for="item-3" class="card2" id="song-3">
+    <img src="{{asset('assets/imag/Mariage3.png')}}" alt="song" >
+    </label>
+</div>
+
+
+
+</body>
+
+
+
+{% endblock %}
+

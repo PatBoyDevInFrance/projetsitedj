@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+ <div class="container mt-5">
+  <div id="drag-container">
+  <div id="spin-container">
+
+    
+    <a  href="{{path('app_materiel')}}">
+      <img src="{{asset('assets/imag/site3.png')}}?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+    </a>
+    <a  href="{{path('app_discotheque')}}">
+      <img src="{{asset('assets/imag/site5.png')}}?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+    </a>
+    <a  href="{{path('app_mariages')}}">
+      <img src="{{asset('assets/imag/site8.png')}}?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+    </a>
+    <a  href="{{path('app_biographie')}}">     
+      <img src="{{asset('assets/imag/site7.png')}}?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+    </a>
+    <a  href="{{path('app_schooldj')}}">
+      <img src="{{asset('assets/imag/site2.png')}}?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+    </a>
+    
+    <a  href="{{path('app_soiree')}}">
+      <img src="{{asset('assets/imag/site1.png')}}?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+    </a>
+    <a  href="{{path('app_afterwork')}}">
+      <img src="{{asset('assets/imag/site6.png')}}?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+    </a>
+    
+    <!-- Example image with link -->
+    <a  href="{{path('app_portefolio')}}">
+      <img src="{{asset('assets/imag/site4.png')}}" alt="">
+    </a>
+
+    <!-- Example add video  
+    <video controls autoplay="autoplay" loop>
+      <source src="https://player.vimeo.com/external/322244668.sd.mp4?s=338c48ac2dfcb1d4c0689968b5baf94eee6ca0c1&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+    </video>
+-->
+    <!-- Text at center of ground -->
+    
+  </div>
+  <div id="ground"></div>
+</div>
+
+</div>
+{% endblock %}

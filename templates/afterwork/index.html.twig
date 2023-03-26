@@ -1,0 +1,90 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Afterwork{% endblock %}
+
+
+{% block body %}
+
+<body class="color-disco1">
+  
+
+
+<div class="container mt-5">
+<div class="container3 glass2 p-5">
+<h1 classe="text-center ">Afterwork</h1>
+<h2 style="color:black">Chill'Out</h2>
+
+<p style="color: orange; font-size: 1.2em;" classe=" mt-5">
+
+
+<br>Concept «cool» et anglo-saxon qui consiste à aller partager une bière, <br> ou un verre de vin, entre collègues après le travail. <br> 
+Un moment convivial constitué d'une ambiance musicale détendu, raffiné, chill,<br> funck, salsa, jazz, soul, zouk, rnb, disco, downTempo, electro etc..  <br>
+Une musique soigneusement étudiée pour voyager à travers une émotion subtile de culture.<br>
+                      Ambiance conviviale, apaisante et dynamique  <br>
+                       </p>
+
+</div>
+
+<div class="container2 mb-3 mx-auto ">
+
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2" >
+    <input type="radio" name="slider" id="item-3" >
+    
+    <div class="cards2">
+    <label for="item-1" class="card2" id="song-1">
+     <img src="{{asset('assets/imag/aft1.jpeg')}}"  alt="song" >
+    </label>
+    <label for="item-2" class="card2" id="song-2">
+   <img src="{{asset('assets/imag/aft1.jpeg')}}" alt="song" >
+    </label>
+    <label for="item-3" class="card2" id="song-3">
+    <img src="{{asset('assets/imag/aft3.jpeg')}}" alt="song" >
+    </label>
+    
+</div>
+
+<div class="slider-container">
+        <button class="direction-btn left">
+          <img src="{{asset('assets/ressources/left-chevron.svg')}}" alt="left arrow">
+        </button>
+        <button class="direction-btn right">
+          <img src="{{asset('assets/ressources/right-chevron.svg')}}" alt="right arrow">
+        </button>
+      
+        <div class="slide slide-1 active">
+          <div class="content">
+            <img src="{{asset('assets/imag/aft1.jpeg')}}" alt="cat profile">
+            
+            
+          </div>
+        </div>
+
+        <div class="slide slide-2">
+          <div class="content">
+            <img src="{{asset('assets/imag/aft2.jpeg')}}" alt="cat profile">
+          </div>
+        </div>
+
+        <div class="slide slide-3">
+          <div class="content">
+            <img src="{{asset('assets/imag/aft3.jpeg')}}" alt="cat profile">
+            
+            </div>
+          </div>
+          
+
+       
+      </div>
+</body>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+

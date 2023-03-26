@@ -1,0 +1,192 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Discotheque{% endblock %}
+
+{% block body %}
+
+
+<body class="color-disco3">
+  
+
+
+<div class="container mt-5 ">
+<div class="row">
+<h1 classe="text-center p-5" style="color: grey">Discothèque</h1>
+<h2> Enjoy party people </h2>
+</div> 
+<div class="container3 glass  " style="width: auto">
+<p style="color: orange; font-size: 1.2em;" classe=" mt-5">
+ Danser, chanter, amuser.. <br>
+					Créer l'ambiance la plus incroyable possible est l'objectif de mes soirées.<br>
+          </p>
+
+
+
+
+
+
+
+            <video class="video" autoplay controls >
+                <source src="{{ asset('assets/imag/v1.mp4') }}" type="video/mp4">
+            </video>
+            <video class="video"  controls >
+                <source src="{{ asset('assets/imag/v3a.mp4') }}" type="video/mp4">
+            </video>
+            <video class="video"  controls >
+                <source src="{{ asset('assets/imag/v5a1.mp4') }}" type="video/mp4">
+            </video>
+
+</div>
+</div>
+
+<br> <br>
+
+{# 
+<div class="container2 mb-3 mx-auto ">
+
+    <input type="radio" name="slider" id="item-1" checked>
+    <input type="radio" name="slider" id="item-2" >
+    <input type="radio" name="slider" id="item-3" >
+    
+    <div class="cards2">
+    <label for="item-1" class="card2" id="song-1">
+     <img src="{{asset('assets/imag/niag4.jpeg')}}"  alt="song" >
+    </label>
+    <label for="item-2" class="card2" id="song-2">
+   <img src="{{asset('assets/imag/niag3.jpg')}}" alt="song" >
+    </label>
+    <label for="item-3" class="card2" id="song-3">
+    <img src="{{asset('assets/imag/chaum1.jpg')}}" alt="song" >
+    </label>
+    <label for="item-4" class="card2" id="song-4">
+    <img src="{{asset('assets/imag/niag1.jpg')}}" alt="song" >
+    </label>
+    <label for="item-5" class="card2" id="song-5">
+    <img src="{{asset('assets/imag/niag2.jpg')}}"  alt="song" >
+    </label>
+    <label for="item-6" class="card2" id="song-6">
+    <img src="{{asset('assets/imag/niag3.jpg')}}" alt="song" >
+    </label>
+    <label for="item-7" class="card2" id="song-7">
+    <img src="{{asset('assets/imag/club1.jpg')}}" alt="song" >
+    </label>
+
+    <label for="item-8" class="card2" id="song-8">
+    <img src="{{asset('assets/imag/club2.jpeg')}}" alt="song" >
+    </label>
+
+    <label for="item-9" class="card2" id="song-9">
+    <img src="{{asset('assets/imag/club3.jpeg')}}"  alt="song" >
+    </label>
+    <label for="item-10" class="card2" id="song-10">
+     <img src="{{asset('assets/imag/club4.jpeg')}}" alt="song" >
+    </label>
+</div> #}
+
+
+{# photos #}
+
+
+<div class="slider-container">
+        <button class="direction-btn left">
+          <img src="{{asset('assets/ressources/left-chevron.svg')}}" alt="left arrow">
+        </button>
+        <button class="direction-btn right">
+          <img src="{{asset('assets/ressources/right-chevron.svg')}}" alt="right arrow">
+        </button>
+      
+        <div class="slide slide-1 active">
+          <div class="content">
+            <img src="{{asset('assets/imag/club9.jpg')}}" alt="cat profile">
+            
+            
+          </div>
+        </div>
+
+        <div class="slide slide-2">
+          <div class="content">
+            <img src="{{asset('assets/imag/niag2.jpg')}}" alt="cat profile">
+          </div>
+        </div>
+
+        <div class="slide slide-3">
+          <div class="content">
+            <img src="{{asset('assets/imag/niag3.jpg')}}" alt="cat profile">
+            
+            </div>
+          </div>
+          <div class="slide slide-4">
+          <div class="content">
+            <img src="{{asset('assets/imag/chaum2.png')}}" alt="cat profile">
+            
+            </div>
+          </div>
+          
+          <div class="slide slide-5">
+          <div class="content">
+            <img src="{{asset('assets/imag/chaum1.jpg')}}" alt="cat profile">
+            
+           </div> 
+          </div>
+
+          <div class="slide slide-6">
+          <div class="content">
+            <img src="{{asset('assets/imag/club11.jpg')}}" alt="cat profile">
+            
+           </div> 
+          </div>
+
+          <div class="slide slide-7">
+          <div class="content">
+            <img src="{{asset('assets/imag/club10.jpg')}}" alt="cat profile">
+            
+           </div> 
+          </div>
+
+          <div class="slide slide-8">
+          <div class="content">
+            <img src="{{asset('assets/imag/club2.jpeg')}}" alt="cat profile">
+            
+           </div> 
+          </div>
+
+          <div class="slide slide-9">
+          <div class="content">
+            <img src="{{asset('assets/imag/club10.jpg')}}" alt="cat profile">
+            
+           </div> 
+          </div>
+
+<div class="slide slide-10">
+          <div class="content">
+            <img src="{{asset('assets/imag/club8.jpeg')}}" alt="cat profile">
+            
+           </div> 
+          </div>
+
+<div class="slide slide-11">
+          <div class="content">
+            <img src="{{asset('assets/imag/club9.jpg')}}" alt="cat profile">
+            
+           </div> 
+          </div>
+
+<div class="slide slide-12">
+          <div class="content">
+            <img src="{{asset('assets/imag/club11.jpg')}}" alt="cat profile">
+            
+           </div> 
+          </div>
+
+
+
+
+       
+      </div>
+
+
+</body>
+
+
+
+{% endblock %}

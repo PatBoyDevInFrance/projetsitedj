@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Le materiel{% endblock %}
+
+{% block body %}
+
+<div class="container">
+<div class="row">
+
+    <h1 classe="text-center p-5 " style="color:grey">Le matériel</h1>
+
+    <br> <br>
+    
+
+    
+            <div class="card border-alert mb-3 mx-auto" style="width: 18rem;">
+                <img src="{{asset('assets/imag/lu1.png')}}" height="200px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Les lumières</h5>
+                    <p class="card-text">- barre de 5 mini lyres <br>
+                    - barres de led <br>
+                    - laser <br>
+                    - controleur DMX <br>
+                    - machine à brouillard <br></p>
+                    {# <a href="#" class="btn btn-primary">Go somewhere</a> #}
+                </div>
+            </div>
+        
+
+
+    <div class="card border-alert mb-3 mx-auto" style="width: 18rem;">
+        <img src="{{asset('assets/imag/son.png')}}" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Le son</h5>
+            <p class="card-text">- Alto 2000w pour un son puissant et chaleureux <br> <br> </p>
+            {# <a href="#" class="btn btn-primary">Go somewhere</a> #}
+        </div>
+        </div>
+
+        <div class="card border-primary mb-3 mx-auto" style="width: 18rem;">
+        <img src="{{asset('assets/imag/sono.png')}}" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Console</h5>
+            <p class="card-text"> - DDJ 1000 Pioneer <br> - 2 Micro hf  <br> </p>
+            {# <a href="#" class="btn btn-primary">Go somewhere</a> #}
+        </div>
+        </div>
+
+        <div class="card border-alert mb-3 mx-auto" style="width: 18rem;">
+        <img src="{{asset('assets/imag/video.png')}}" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Video projecteur</h5>
+            <p class="card-text"> - BenQ focale semi court <br> </p>
+            {# <a href="#" class="btn btn-primary">Go somewhere</a> #}
+        </div>
+        </div>
+    
+</div>
+<div class="container3 glass p-5 text-center">
+
+
+            <video autoplay controls width="300">
+            <source src="{{ asset('assets/imag/v1a.mp4') }}" type="video/mp4">
+            </video>
+                
+
+</div>
+{% endblock %}

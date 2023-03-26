@@ -1,0 +1,605 @@
+
+    
+    
+    nav {
+    display: flex;
+    height: 20vw;
+    width: 50%;
+    }
+    
+    header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
+    /*
+    Font: ITC AVANT GARDE GOTHIC PRO
+    
+    Uses discretionary ligatures and stylistic sets for the typeface
+    */
+    
+    .bold-AG {
+    font-family: itc-avant-garde-gothic-pro,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    }
+    .medium-AG {
+    font-family: itc-avant-garde-gothic-pro,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    }
+    .book-AG {
+    font-family: itc-avant-garde-gothic-pro,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    }
+    
+    /*
+    Title font, use <b> for bold weight, <i> for book weight, and unadorned <h1> for medium weight.
+    */
+    h1 {
+    font-family: itc-avant-garde-gothic-pro,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    font-size: 6.667vw;
+    line-height: .25vw;
+    font-feature-settings: "ss01" 1, "ss03" 1, "kern" 1, "dlig" 1;
+    }
+    
+    h2 {
+    font-family: itc-avant-garde-gothic-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.667vw;
+    color: #fff;
+    line-height: .25vw;
+    }
+    
+    .neon-text {
+    animation: flicker 6s linear infinite;
+    }
+    /*
+    BRIEF:
+    
+    This animation transitions between 3 stages at differing speeds to mimic organic flickering in old neon signs.
+    
+    1 is the standard brightness which will be the basis state
+    
+    2 is the overbright state used for sudden flashes
+    
+    3 is the off stage, where only a faint glow inside the text remains.
+    
+    2:
+    color: white;
+    text-shadow:
+    0 0 0.3vw #fff,
+    0 0 0.521vw #fff,
+    0 0 1.094vw #fff,
+    0 0 2.188vw #FF5200,
+    0 0 4.271vw #FF5200,
+    0 0 4.792vw #FF5200,
+    0 0 5.313vw #FF5200,
+    0 0 7.865vw #FF5200;
+    1:
+    opacity: 75%;
+    color: white;
+    text-shadow:
+    0 0 1vw #FF5200,
+    0 0 2vw #FF5200,
+    0 0 2.5vw #FF5200,
+    0 0 3vw #FF5200,
+    0 0 4vw #FF5200;
+    3:
+    opacity: 25%;
+    color: transparent;
+    text-shadow:
+    0 0 0.3vw #FF5200,
+    0 0 0.521vw #FF5200;
+    
+    the stages of animation were figured out manually by studying stock footage of a neon sign flickering.
+    */
+    
+    @keyframes flicker {
+    0% {
+    /*3*/
+    opacity: 25%;
+    color: transparent;
+    text-shadow:
+    0 0 0.3vw #FF5200,
+    0 0 0.521vw #FF5200;
+    } 3.3% {
+    /*3*/
+    opacity: 25%;
+    color: transparent;
+    text-shadow:
+    0 0 0.3vw #FF5200,
+    0 0 0.521vw #FF5200;
+    } 3.67% {
+    /*2*/
+    color: white;
+    text-shadow:
+    0 0 0.3vw #fff,
+    0 0 0.521vw #fff,
+    0 0 1.094vw #fff,
+    0 0 2.188vw #FF5200,
+    0 0 4.271vw #FF5200,
+    0 0 4.792vw #FF5200,
+    0 0 5.313vw #FF5200,
+    0 0 7.865vw #FF5200;
+    } 10% {
+    /*1*/
+    opacity: 75%;
+    color: white;
+    text-shadow:
+    0 0 1vw #FF5200,
+    0 0 2vw #FF5200,
+    0 0 2.5vw #FF5200,
+    0 0 3vw #FF5200,
+    0 0 4vw #FF5200;
+    } 36.7% {
+    /*1*/
+    opacity: 75%;
+    color: white;
+    text-shadow:
+    0 0 1vw #FF5200,
+    0 0 2vw #FF5200,
+    0 0 2.5vw #FF5200,
+    0 0 3vw #FF5200,
+    0 0 4vw #FF5200;
+    } 37.3% {
+    /*3*/
+    opacity: 25%;
+    color: transparent;
+    text-shadow:
+    0 0 0.3vw #FF5200,
+    0 0 0.521vw #FF5200;
+    } 38% {
+    /*1*/
+    opacity: 75%;
+    color: white;
+    text-shadow:
+    0 0 1vw #FF5200,
+    0 0 2vw #FF5200,
+    0 0 2.5vw #FF5200,
+    0 0 3vw #FF5200,
+    0 0 4vw #FF5200;
+    } 40.67% {
+    /*3*/
+    opacity: 25%;
+    color: transparent;
+    text-shadow:
+    0 0 0.3vw #FF5200,
+    0 0 0.521vw #FF5200;
+    } 41.33% {
+    /*1*/
+    opacity: 75%;
+    color: white;
+    text-shadow:
+    0 0 1vw #FF5200,
+    0 0 2vw #FF5200,
+    0 0 2.5vw #FF5200,
+    0 0 3vw #FF5200,
+    0 0 4vw #FF5200;
+    } 60% {
+    /*2*/
+    color: white;
+    text-shadow:
+    0 0 0.3vw #fff,
+    0 0 0.521vw #fff,
+    0 0 1.094vw #fff,
+    0 0 2.188vw #FF5200,
+    0 0 4.271vw #FF5200,
+    0 0 4.792vw #FF5200,
+    0 0 5.313vw #FF5200,
+    0 0 7.865vw #FF5200;
+    } 80% {
+    /*1*/
+    opacity: 75%;
+    color: white;
+    text-shadow:
+    0 0 1vw #FF5200,
+    0 0 2vw #FF5200,
+    0 0 2.5vw #FF5200,
+    0 0 3vw #FF5200,
+    0 0 4vw #FF5200;
+    } 93.3% {
+    /*2*/
+    color: white;
+    text-shadow:
+    0 0 0.3vw #fff,
+    0 0 0.521vw #fff,
+    0 0 1.094vw #fff,
+    0 0 2.188vw #FF5200,
+    0 0 4.271vw #FF5200,
+    0 0 4.792vw #FF5200,
+    0 0 5.313vw #FF5200,
+    0 0 7.865vw #FF5200;
+    } 93.5% {
+    /*1*/
+    opacity: 75%;
+    color: white;
+    text-shadow:
+    0 0 1vw #FF5200,
+    0 0 2vw #FF5200,
+    0 0 2.5vw #FF5200,
+    0 0 3vw #FF5200,
+    0 0 4vw #FF5200;
+    } 98% {
+    /*3*/
+    opacity: 25%;
+    color: transparent;
+    text-shadow:
+    0 0 0.3vw #FF5200,
+    0 0 0.521vw #FF5200;
+    } 100% {
+    /*1*/
+    opacity: 75%;
+    color: white;
+    text-shadow:
+    0 0 1vw #FF5200,
+    0 0 2vw #FF5200,
+    0 0 2.5vw #FF5200,
+    0 0 3vw #FF5200,
+    0 0 4vw #FF5200;
+    }
+    }
+    
+    /*bold weight*/
+    b {
+    font-weight: 700;
+    }
+    /*book weight NON ITALIC*/
+    i {
+    font-style: normal;
+    font-weight: 100;
+    }
+
+    @media screen and (min-width: 321px){
+        .sizeT {
+        font-size: 4em;
+    }
+    }
+
+    
+
+
+
+    /*card
+    
+    .card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    color: #fff;
+    background: transparent;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 49, 49, 0.5);
+    border-right: 1px solid rgba(0, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(57, 255, 20, 0.5);
+    border-left: 1px solid rgba(255, 255, 113, 0.5);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    }
+    
+    p {
+    font-size: 0.95rem;
+    text-align: center;
+    }
+    */
+    /* span {
+    position: absolute;
+    border-radius: 100vmax;
+    }
+    
+    .top {
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background: linear-gradient(
+    90deg,
+    transparent 50%,
+    rgba(255, 49, 49, 0.5),
+    rgb(255, 49, 49)
+    );
+    }
+    
+    .bottom {
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    background: linear-gradient(
+    90deg,
+    rgb(57, 255, 20),
+    rgba(57, 255, 20, 0.5),
+    transparent 50%
+    );
+    }
+    
+    .right {
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(
+    180deg,
+    transparent 30%,
+    rgba(0, 255, 255, 0.5),
+    rgb(0, 255, 255)
+    );
+    }
+    
+    .left {
+    left: 0;
+    bottom: 0;
+    width: 5px;
+    height: 0;
+    background: linear-gradient(
+    180deg,
+    rgb(255, 255, 113),
+    rgba(255, 255, 113, 0.5),
+    transparent 70%
+    );
+    }
+    
+    .top {
+    animation: animateTop 3s ease-in-out infinite;
+    }
+    
+    .bottom {
+    animation: animateBottom 3s ease-in-out infinite;
+    }
+    
+    .right {
+    animation: animateRight 3s linear infinite;
+    }
+    
+    .left {
+    animation: animateLeft 3s ease-in-out infinite;
+    }
+    
+    @keyframes animateTop {
+    25% {
+    width: 100%;
+    opacity: 1;
+    }
+    
+    30%,
+    100% {
+    opacity: 0;
+    }
+    }
+    
+    @keyframes animateBottom {
+    0%,
+    50% {
+    opacity: 0;
+    width: 0;
+    }
+    
+    75% {
+    opacity: 1;
+    width: 100%;
+    }
+    
+    76%,
+    100% {
+    opacity: 0;
+    }
+    }
+    
+    @keyframes animateRight {
+    0%,
+    25% {
+    opacity: 0;
+    height: 0;
+    }
+    
+    50% {
+    opacity: 1;
+    height: 100%;
+    }
+    
+    55%,
+    100% {
+    height: 100%;
+    opacity: 0;
+    }
+    }
+    
+    @keyframes animateLeft {
+    0%,
+    75% {
+    opacity: 0;
+    bottom: 0;
+    height: 0;
+    }
+    
+    100% {
+    opacity: 1;
+    height: 100%;
+    }
+    }
+*/
+
+    /* menu burger */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+/* *{
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: bisque;
+}
+li {
+  list-style: none;
+}
+
+a{
+  color: #fff;
+  text-decoration: none;
+}
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+  color: aliceblue;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+@media (max-width:768px) {
+  .hamburger{
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+    transform: translateY(8px) rotate(45deg);
+    
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+    
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+    
+  }
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70%;
+    gap: 0;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+
+  }
+  nav-item{
+    margin: 16px 0;
+  }
+
+  nav-menu.active{
+    left: 0;
+  }
+} */
+
+ /* Menu burgEr */
+
+/* 
+#side-bar{
+	position:absolute;
+	width: 230px;
+	height: 100%;
+	background-color:rgba(132, 49, 7, 0.61);
+  
+	left:-300px;
+    transition: .5s ease-out;
+    z-index: 3;
+}
+.toggle-btn{
+	position: absolute;
+	top: 30px;
+	left: 310px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+.toggle-btn span{
+	width: 60px;
+	height: 10px;
+  border-radius:5px;
+	background: #f7f7f7a5;
+	display: block;
+  margin-top:4px; 
+  transition: 0.3s ease;
+}
+
+li{
+	color: #292929;
+	list-style: none;
+	font-size: 2.5rem;
+	cursor: pointer;
+	padding-left:5px; 
+}
+
+li:hover{
+	background: #292929;
+	color: #FCFCFB;
+}
+
+#side-bar.active{
+	left:0;
+}
+#side-bar.active .toggle-btn {
+  top: 2.8rem;
+  left: 235px;
+}
+#side-bar.active span {
+  position: absolute;
+}
+#side-bar.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 0px;
+}
+#side-bar.active span:nth-child(2) {
+  opacity: 0;
+}
+#side-bar.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+#side-bar.active ~ .content {
+  opacity: 0.3;
+}
+
+a{
+  text-decoration: none;
+}
+ */
+
+  
+  /** glass **/
+
+  
+    
+  
+    
+    
+    
+    
+    

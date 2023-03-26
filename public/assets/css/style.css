@@ -1,0 +1,339 @@
+/* Styles from the GreenSock website 
+body {
+    background-color: rgb(211, 211, 211);
+    font-weight: 300;
+  }
+*/
+
+
+/* Carousel */
+
+/* input[type="radio"]{
+  display: none;
+}
+.card2{
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: trasform 0.4s ease;
+  cursor: pointer;
+}
+
+.container2{
+  width: 100%;
+  max-width: 800px;
+  max-height: 600px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards2{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+  object-fit: cover;
+
+}
+#item-1:checked ~ .cards2 #song-3,
+#item-2:checked ~ .cards2 #song-1,
+#item-3:checked ~ .cards2 #song-2{
+  transform: translateX(-40%) scale(0.8);
+  opacity: 0;
+  z-index: 0;
+
+}
+
+#item-1:checked ~ .cards2 #song-3,
+#item-2:checked ~ .cards2 #song-1,
+#item-3:checked ~ .cards2 #song-2{
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+
+}
+#item-1:checked ~ .cards2 #song-1 img,
+#item-2:checked ~ .cards2 #song-2 img,
+#item-3:checked ~ .cards2 #song-2 img{
+  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
+
+.pageMariage {
+  background-color: rgb(81, 81, 81);
+  border-radius: 30px;
+} */
+
+/* card */
+
+.row {
+  padding-top: 5%;
+ }
+
+  .ipsType_right {
+    text-align: right;
+  }
+  .ipsType_center {
+    text-align: center;
+  }
+  .cInnerContent {
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .ipsSpacer_bottom_double {
+    margin-bottom: 30px;
+  }
+  .ipsGrid {
+    display: inline-block;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ipsGrid::before, .ipsGrid::after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .ipsGrid > [class*="ipsGrid_span"] {
+    display: block;
+    width: 100%;
+    min-height: 30px;
+    box-sizing: border-box;
+  }
+  .ipsGrid > .ipsGrid_span5 {
+    width: 40.42553191489362%;
+  }
+  .ipsGrid > .ipsGrid_span7 {
+    width: 57.44680851063829%;
+  }
+  .ipsGrid > [class*="ipsGrid_span"] {
+    float: left;
+    margin-left: 2%;
+  }
+  .ipsGrid > [class*="ipsGrid_span"]:first-child {
+    margin-left: 0;
+  }
+  .feature {
+    display: flex;
+    align-items: center;
+  }
+  /* .card {
+    margin-bottom: 30px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 1px 1px 5px 1px #CCCCCC;
+  }
+
+  /*   transition: 0.3s; */
+  
+
+  /*
+  .featured-image-container .card {
+    padding: 10px;
+    height: 0;
+    padding-bottom: calc(100% - 10px);
+  } */
+  h2.heading_large {
+    font-size: 1.8em;
+  }
+   img {
+    max-width: 120%;
+  }
+  
+  .header-section {
+    margin: 200px auto;
+  } 
+  
+  .gs_reveal {
+    opacity: 0;
+    visibility: hidden;
+    will-change: transform, opacity;
+  }
+
+
+  /* parallax */
+
+  a {
+    color: #555;
+    font-weight: 400;
+  }
+  
+  
+  
+  .pContent {
+    margin-top: auto;
+    width: 100%;
+    background-color: rgba(0, 102, 254, 0);
+    box-shadow: inset 5em 1em rgba(255, 255, 255, 0);
+    border-radius: 30px;
+    padding: 100px 100px;
+  }
+  
+  /* .pImage {
+    width: 70%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-height: 900px;
+  } */
+
+  /* .concierge{
+
+    
+      transform: perspective(705px) rotateX(45deg);
+  
+    
+    
+  } */
+
+.home-content {
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+    color: #fff;
+    z-index: 2;
+}
+.home-content h1 {
+    font-family: Playfair Display, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 85px;
+    /* font-weight: bolder; */
+    line-height: 1.1;
+}
+.home-content .middle-line {
+    height: 400px;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.42);
+    margin: 40px auto;
+    position: relative;
+}
+
+
+.home-content button {
+    display: block;
+    font-size: 20px;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    background: transparent;
+    color: #fff;
+    margin: 50px auto 0;
+    padding: 16px 30px;
+    cursor: pointer;
+}
+
+.imgtitre {
+
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+
+
+/* scroll */
+
+/* menu burger */
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+/* */
+#side-bar{
+	position: absolute;
+	width: 230px;
+	height: 100%;
+	background-color:rgba(255, 204, 0, 0.221);
+  border-radius: 20px;
+	left:-300px;
+  transition: .5s ease-out;
+  z-index: 3;
+} 
+.toggle-btn{
+	position: absolute;
+	top: 30px;
+	left: 310px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+.toggle-btn span{
+	width: 60px;
+	height: 10px;
+  border-radius:5px;
+	background: #f7f7f7a5;
+	display: block;
+  margin-top:4px; 
+  transition: 0.3s ease;
+}
+
+li{
+	color: #292929;
+	list-style: none;
+	font-size: 2.5rem;
+	cursor: pointer;
+	padding-left:5px; 
+}
+
+li:hover{
+	background: #292929;
+	color: #FCFCFB;
+}
+
+#side-bar.active{
+	left:0;
+}
+#side-bar.active .toggle-btn {
+  top: 2.8rem;
+  left: 235px;
+}
+#side-bar.active span {
+  position: absolute;
+}
+#side-bar.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 0px;
+}
+#side-bar.active span:nth-child(2) {
+  opacity: 0;
+}
+#side-bar.active span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+#side-bar.active ~ .content {
+  opacity: 0.3;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+  
